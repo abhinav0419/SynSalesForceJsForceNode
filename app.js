@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
     // you can change loginUrl to connect to sandbox or prerelease env.
      loginUrl : 'https://test.salesforce.com'
   });
-  var username = 'apandy@adt.com.adtdev2';
-  var password = 'Apsp0419';
+  var username = 'username sandbox';
+  var password = 'password';
   var apexBody = "System.debug('Hello, World');";
   conn.login(username, password, function(err, userInfo) {
     if (err) { return console.error(err); }
